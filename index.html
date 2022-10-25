@@ -1,0 +1,466 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Project 120 Google Lens and MobileNet CaseStudy </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+  
+  
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center>
+    <p> A Case Study Between Mobile Net and Google Len's Photo Recognition Accuracy.</p>
+    <span class="google_lens"> Google Lens <img src="https://play-lh.googleusercontent.com/G5oF0mhpOcQzFTrU6TDUL0JoAjzRt38weiZKua7L61WVT1z3dPcE9gUu-W2EwtM9cZU=w240-h480-rw" id="googlelens_png"> </span>
+    <p> vs </p>
+    <p class=" mobilenet btn btn-success" > Mobile Net </p>
+
+    <br>
+
+    <p> Alright, so, lets get something clear. When the two tie, neither gets the point for the lead and I'm deciding which one is better based on creativity and detail given.</p>
+
+      <ol>
+     <div class="test_image_and_result1 col-xs-12"> 
+     <li class="col-sm-4 col-xs-12"> 
+     <b class="white1"> Test Your Image: </b>
+     <img src="NewSnowGlobe.jpg" class="img-responsive"> 
+    </li>
+      
+       <h5 class=" first col-sm-4 col-xs-12">
+       Output on <b> Google Lens </b> - 
+       
+       <span> Available on iStock.
+         Is Labeled; "Beautiful Snow Ball or SnowGlobe."
+       </span>
+
+        </h5>
+
+        <h5 class=" second col-sm-4 col-xs-12">
+        Output on <b> MobileNet Model </b>
+
+        <span> Available Adobe Stock.
+          Is Labeled; "Snow ball or SnowGlobe."
+        </span>
+         </h5>
+
+
+         <div class="mini_result col-xs-12"> 
+          <h4> Your Result- </h4>
+          <hr>
+          <h4> Both Are Correct  Google Lens -0.
+            Mobile Net - 0.
+          </h4>
+
+        </div>
+
+         </div>
+
+         <br>
+
+          
+           -----
+
+           <div class="test_image_and_result1 col-xs-12"> 
+            <li class="col-sm-4 col-xs-12"> 
+            <b class="white1"> Test Your Image: </b>
+            <img src="http://mobileimages.lowes.com/productimages/91557c2b-f985-4b65-8156-cd6ae2aa4ef4/01545432.jpg" class="img-responsive"> 
+           </li>
+             
+              <h5 class=" first col-sm-4 col-xs-12">
+              Output on <b> Google Lens </b> - 
+              
+              <span> Description: ArrowHead 100% Mountain Spring Water.
+                
+                Top two given Results-
+                
+                Available on CVS (2 dollars). 
+              
+              Available on instacart.com (a dollar).
+
+            </span>
+       
+               </h5>
+       
+               <h5 class=" second col-sm-4 col-xs-12">
+               Output on <b> MobileNet Model </b>
+               <span>  Available At Lowes.
+                 
+                Arrowhead 23.7-fl oz Spring Bottled Water 
+               </span>
+
+                </h5>
+       
+       
+                <div class="mini_result col-xs-12"> 
+                 <h4> Your Result- </h4>
+                 <hr>
+                 <h4> I Would Say that they're both correct, but... Google Lens is more descriptive. So, its more accurate.
+                         Google Lens 1 
+                         Mobile Net  0
+                 </h4>
+       
+               </div>
+       
+                </div>
+       
+                ---------
+
+                <div class="test_image_and_result1 col-xs-12"> 
+                  <li class="col-sm-4 col-xs-12"> 
+                  <b class="white1"> Test Your Image: </b>
+                  <img src="Honey.jpg" class="img-responsive"> 
+                 </li>
+                   
+                    <h5 class=" first col-sm-4 col-xs-12">
+                    Output on <b> Google Lens </b> - 
+                    
+                    <span> 
+ 
+                       Available at Amazon and Trader Joes.
+
+                       Trader Joe's Mostly Mesquite Honey 24 oz (Pack of 2).
+
+                    </span>
+             
+                     </h5>
+             
+                     <h5 class="second col-sm-4 col-xs-12">
+                     Output on <b> MobileNet Model </b>
+
+                     <span>
+                       
+                      Mesquite Honey is a lightly floral and pleasantly mild honey produced 
+                      
+                      in the Desert Southwest of the US and Northern Mexico.
+
+                    </span>
+
+                      </h5>
+             
+             
+                      <div class="mini_result col-xs-12"> 
+                       <h4> Your Result- </h4>
+                       <hr>
+                       <h4> I think Mobile Net wins this one, even though they don't give an actual place to buy the product.
+
+                             Google Lens tells us the place to buy it and the ounce count, along with the pack of two. 
+                             
+                             But, Mobilenet tells us the exact place the honey is made so it may win.
+
+                             Google Lens -1 
+
+                             Mobile Net - 1
+                      </h4>
+             
+                     </div>
+             
+                      </div>
+
+                      ---------
+
+                      <div class="test_image_and_result1 col-xs-12"> 
+            <li class="col-sm-4 col-xs-12"> 
+            <b class="white1"> Test Your Image: </b>
+            <img src="NBA_Basketball.jpg" class="img-responsive"> 
+           </li>
+             
+              <h5 class=" first col-sm-4 col-xs-12">
+              Output on <b> Google Lens </b> - 
+              
+              <span>
+                
+                Available on fantics.com.
+
+                 Signed by NBA stars; Giannis, Jrue Holiday, and Khris Middleton. 
+
+                 Cost 900 dollars.
+
+              </span>
+       
+               </h5>
+       
+               <h5 class=" second col-sm-4 col-xs-12">
+               Output on <b> MobileNet Model </b>
+
+               <span> 
+
+                Available on Yahoo Sports.
+
+                NBA Wilson form partnership for new game basketballs in 21-22 season.
+
+               </span>
+
+                </h5>
+       
+       
+                <div class="mini_result col-xs-12"> 
+                 <h4> Your Result- </h4>
+                 <hr>
+                 <h4> Its a Spalding Basketball, not a Wilson one. Mobilenet doesn't even say that its signed and/or who signed it.
+
+                     Google Lens - 2
+
+                     Mobile Net -  1
+
+                 </h4>
+       
+               </div>
+       
+                </div>
+
+                -----------
+
+                <div class="test_image_and_result1 col-xs-12"> 
+                  <li class="col-sm-4 col-xs-12"> 
+                  <b class="white1"> Test Your Image: </b>
+                  <img src="https://cdn.shopify.com/s/files/1/0602/8086/4941/products/FA-04A-AP2A_ed665e56-c61d-45ab-8c95-f1e767c1e8f7.jpg?crop=center&format=pjpg&height=512&v=1631867727&width=512" class="img-responsive"> 
+                 </li>
+                   
+                    <h5 class=" first col-sm-4 col-xs-12">
+                    Output on <b> Google Lens </b> - 
+                    
+                    <span> Burga Airpod HardCase Compatible with Apple Airpods Pro. 2019 Charing Case.
+                           4/5 stars. 14 dollars.
+                    
+                    </span>
+             
+                     </h5>
+             
+                     <h5 class=" second col-sm-4 col-xs-12">
+                     Output on <b> MobileNet Model </b>
+                     <span>
+
+                      Available on Amazon for 14 dollars.
+                       
+                      COMPATIBLE DEVICE - Case fits perfectly with regular and wireless charging case for AirPods PRO 2019 (Airpods case skin only, Air Pods.
+
+                     </span>
+
+                      </h5>
+             
+             
+                      <div class="mini_result col-xs-12"> 
+                       <h4> Your Result- </h4>
+                       <hr>
+                       <h4> They Both explain where to get each but one explains what type it is and the other explains how it naturally is.     Both are Correct. Google Lens -2. Mobile Net -1 </h4>
+                             
+             
+                     </div>
+             
+                      </div>
+
+                      --------------
+
+                      <div class="test_image_and_result1 col-xs-12"> 
+                        <li class="col-sm-4 col-xs-12"> 
+                        <b class="white1"> Test Your Image: </b>
+                        <img src="PhoneCharger.jpg" class="img-responsive"> 
+                       </li>
+                         
+                          <h5 class=" first col-sm-4 col-xs-12">
+                          Output on <b> Google Lens </b> - 
+                          
+                          <span> Available on Poshmark.
+                                 Genuine Apple USB-C Macbook Air Charger. 
+
+                                 31 Dollars.
+
+
+                          </span>
+                   
+                           </h5>
+                   
+                           <h5 class=" second col-sm-4 col-xs-12">
+                           Output on <b> MobileNet Model </b>
+                           <span> Fifteen dollars on amazon.
+
+                            Apple iPhone Fast charger, 20W[Apple MFi Certified] USB Type C Fast Charging Block.
+                           </span>
+                            </h5>
+                   
+                   
+                            <div class="mini_result col-xs-12"> 
+                             <h4> Your Result- </h4>
+                             <hr>
+                             <h4> Mobile Net is better because google lens directed me to some random owner while Mobile Net actually sent me to Amazon to get an actual apple charger.
+
+                              Mobile Net -2 
+                              Google Lens -2
+                             </h4>
+                   
+                           </div>
+                   
+                            </div>
+
+                             ------------
+
+                            <div class="test_image_and_result1 col-xs-12"> 
+                              <li class="col-sm-4 col-xs-12"> 
+                              <b class="white1"> Test Your Image: </b>
+                              <img src="Spoon2.jpg" class="img-responsive"> 
+                             </li>
+                               
+                                <h5 class=" first col-sm-4 col-xs-12">
+                                Output on <b> Google Lens </b> - 
+                                
+                                <span> Amazon Basic Stainless Steel Dinner Spoons with round Edge. Pack of 12 for 25 dollars.</span>
+                         
+                                 </h5>
+                         
+                                 <h5 class=" second col-sm-4 col-xs-12">
+                                 Output on <b> MobileNet Model </b>
+                                 <span> Amazon Basic Stainless Steel Dinner Spoons with round Edge. Pack of 12 for 25 dollars. </span>
+                                  </h5>
+                         
+                         
+                                  <div class="mini_result col-xs-12"> 
+                                   <h4> Your Result- </h4>
+                                   <hr>
+                                   <h4> Both are Correct, tie. </h4>
+                         
+                                 </div>
+                         
+                                  </div>
+
+                                  ---------------
+
+                                  <div class="test_image_and_result1 col-xs-12"> 
+                                    <li class="col-sm-4 col-xs-12"> 
+                                    <b class="white1"> Test Your Image: </b>
+                                    <img src="SeaSalt.png" class="img-responsive"> 
+                                   </li>
+                                     
+                                      <h5 class=" first col-sm-4 col-xs-12">
+                                      Output on <b> Google Lens </b> - 
+                                      
+                                      <span> Indicates this Sea salt's name; Morton sea salt.
+                                        
+                                        Says where it is available; Walmart (twelve dollars), boxed.com (three dollars), and amazon (28 dollars).</span>
+                               
+                                       </h5>
+                               
+                                       <h5 class=" second col-sm-4 col-xs-12">
+                                       Output on <b> MobileNet Model </b>
+                                       <span> 
+                                         Nothing
+                                       </span>
+                                        </h5>
+                               
+                               
+                                        <div class="mini_result col-xs-12"> 
+                                         <h4> Your Result- Mobile Net was not able to identify anything really, but google lens was. Google lens 3 Mobile net 2. </h4>
+                                         <hr>
+                                         <h4> </h4>
+                               
+                                       </div>
+                               
+                                        </div>
+
+                                        ---------------
+
+                                        <div class="test_image_and_result1 col-xs-12"> 
+                                          <li class="col-sm-4 col-xs-12"> 
+                                          <b class="white1"> Test Your Image: </b>
+                                          <img src="DinnerPlate.jpg" class="img-responsive"> 
+                                         </li>
+                                           
+                                            <h5 class=" first col-sm-4 col-xs-12">
+                                            Output on <b> Google Lens </b> - 
+                                            
+                                            <span> Google Lens identified: Linens N Things Platinum Banded Chop Plate (Rounded Platter).
+
+                                                   28 dollars on replacements.com.
+                                            </span>
+                                     
+                                             </h5>
+                                     
+                                             <h5 class=" second col-sm-4 col-xs-12">
+                                             Output on <b> MobileNet Model </b>
+                                             <span>
+                                               
+                                                China Gold Seal Dinner Plate also available on replacements.com too. 
+                                            </span>
+
+                                              </h5>
+                                     
+                                     
+                                              <div class="mini_result col-xs-12"> 
+                                               <h4> Your Result- </h4>
+                                               <hr>
+                                               <h4> They're relatively the same dish on the same website, but the one is 18 dollars cheaper than the other. The Google lens one is 28 dollars and the mobile net one is 10 dollars. Mobile net takes this one. Google Lens - 3 Mobile Net - 3.</h4>
+                                             
+                                             </div>
+                                     
+                                              </div>
+                                        
+
+                                              ---------------
+
+                                              <div class="test_image_and_result1 col-xs-12"> 
+                                                <li class="col-sm-4 col-xs-12"> 
+                                                <b class="white1"> Test Your Image: </b>
+                                                <img src="Prunes2.jpg" class="img-responsive"> 
+                                               </li>
+                                                 
+                                                  <h5 class=" first col-sm-4 col-xs-12">
+                                                  Output on <b> Google Lens </b> - 
+                                                  
+                                                  <span> Single Bag of Pitted PRunes Dried Fruit. A Healthy snack for Kids and Adults available on amazon. This sells for 11 and a half dollars. </span>
+                                           
+                                                   </h5>
+                                           
+                                                   <h5 class=" second col-sm-4 col-xs-12">
+                                                   Output on <b> MobileNet Model </b>
+                                                   <span> Some other pitted pruness bag (same description) available on amazon for roughly 18 dollars. </span>
+                                                    </h5>
+                                           
+                                           
+                                                    <div class="mini_result col-xs-12"> 
+                                                     <h4> Your Result- </h4>
+                                                     <hr>
+                                                     <h4> FINAL SCORE: Google Lens wins (4 points), Mobile Net loses (3 points)! Google Lens found the same product on the same website but for 6 and a half dollars cheaper!  </h4>
+                                           
+                                                   </div>
+                                           
+                                                    </div>
+
+                                                    <div> 
+
+                                                      <button class="btn btn-danger" id="button1"> 
+                                                        Google Lens wins! Google Lens wins (4 points)! And Mobile Net Loses (3 points)! 
+                                                        Google Lens was more accurate than google Lens in 4/7 of the Ten Comparisons and Debates 
+                                                        that came close and weren't ties!
+
+                                                      </button>
+                                                    </div>
+      </ol>
+ 
+      
+    
+
+      <div class="copy_right_footer" id="Cobweb"> Joseph's Cobweb.</div>
+</center> 
+
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+
+    </body>
+
+</html>
+
+
+

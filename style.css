@@ -1,0 +1,82 @@
+body{
+    background-color: white;
+}
+
+#Cobweb{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    font-size: 33px;
+    font-style: italic;
+    font-weight: 1;
+}
+
+p{
+    color: blue;
+}
+
+
+.mobilenet{
+  letter-spacing: 3px;
+}
+
+.google_lens{
+    color: red;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+img{
+     margin: top;
+     margin: bottom;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.white1{
+    color: white;
+}
+
+span{
+    letter-spacing: 2px;
+    color: orange;
+}
+
+b{
+    color: green;
+}
+
+.first, .second{
+    background: white;
+    line-height: 2;
+    border-radius: 10px;
+}
+
+.test_image_and_result1{
+
+    margin-top: 18px;
+    background-color: rgb(155, 153, 153);
+     border-radius: 10px;
+     box-shadow: 1px 1px 25px grey;
+     width: 99%;
+     margin-bottom: 18px;
+
+}
+
+.google_lens{
+    color: black;
+}
+
+h4{
+    color: green;
+    font-weight: bold;
+}
+
+#button1 {
+
+    height: 100px;
+
+    width: 1350px;
+}
